@@ -1,17 +1,10 @@
 import React, {useState} from 'react'
 import './inputbars.css';
 
-function Inputbars() {
+const Inputbars = ({ onResponse }) => {
 
     const [topic, setTopic] = useState('');
     const [difficulty, setDifficulty] = useState('');
-    const [result, setResult] = useState('')
-
-    const handleResponse = (response) => {
-        setResult(response)
-        console.log('hey man i worked')
-        console.log(response)
-    }
 
     const setQValue = (qval) =>{
         setTopic(qval)
@@ -48,7 +41,9 @@ function Inputbars() {
           .then(result => {
             // Handle the response from the backend if needed
             console.log(result);
-            //handleResponse(result);
+            setTopic('')
+            setDifficulty('')
+            onResponse(result);
           })
           .catch(error => {
             // Handle any errors that occur during the request
@@ -88,7 +83,7 @@ function Inputbars() {
                 </div>
             </div>
             <input className="btn btn-primary" type="submit" value="Submit" onClick={handleSubmitdetails}/>
-        </div> 
+        </div>
     )
 
 }

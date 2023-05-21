@@ -1,7 +1,7 @@
 from flask import Flask, jsonify
 from flask import request
 from flask_cors import CORS
-import openai,os
+import openai
 from config import API_KEY
 
 
