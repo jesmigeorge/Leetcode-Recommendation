@@ -2,28 +2,18 @@ from flask import Flask, jsonify
 from flask import request
 from flask_cors import CORS
 import openai,os
-from dotenv import load_dotenv
+from config import API_KEY
+
 
 app = Flask(__name__)
 CORS(app)
-
-def configure():
-    load_dotenv()
 
 @app.route('/')
 def home():
     return 'Hello, Flask!'
 
-
-@app.route('/members',methods = ['POST'])
-def tryPost():
-    print("Got post request")
-    result = request.get_json()
-    result.headers.add('Access-Control-Allow-Origin', 'http://localhost:3000')
-    return "<p>{result}</p>"
-
 def myResponse(value,difficulty):
-    openai.api_key = os.getenv('api_key')
+    openai.api_key = API_KEY
     prompt = '''leetcode questions of '''+value+''' with 
     the links to those questions of '''+difficulty+''' level.
     Only respond with question title and link in table 
@@ -61,7 +51,6 @@ def getApi():
     print("hey im printed",data)
     value = data['value']
     difficulty = data['level']
-    configure() # to get the env variable : apikey
     response = jsonify(myResponse(value,difficulty))
     response.headers.add('Access-Control-Allow-Origin', 'http://localhost:3000')
     return response

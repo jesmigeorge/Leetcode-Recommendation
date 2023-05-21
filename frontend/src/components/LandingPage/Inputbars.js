@@ -55,18 +55,7 @@ function Inputbars() {
             console.error(error);
           });
       };
-      
-      const demoPost = () => {
-      fetch('http://localhost:5000/members',{
-            method: 'POST',
-            headers: { "Content-Type": 'application/json'},
-            body: {'name': 'JESMI'}
-        }).then(response => response.json())
-          .then(result => console.log(result))
-          .catch(error => console.log(error))
-    }
-
-    
+  
     return (
         <div className='container'>
             <h2>Let's Code</h2>
@@ -99,7 +88,6 @@ function Inputbars() {
                 </div>
             </div>
             <input className="btn btn-primary" type="submit" value="Submit" onClick={handleSubmitdetails}/>
-            <button onClick={demoPost}>POST ME</button>
         </div> 
     )
 
