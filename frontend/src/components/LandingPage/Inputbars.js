@@ -30,7 +30,6 @@ const Inputbars = ({ onResponse }) => {
         const requestOptions = {
           method: 'POST',
           headers: {
-            // "Accept": "application/json",
             'Content-Type': 'application/json'  // Set the Content-Type header to application/json
           },
         //   mode: 'cors',

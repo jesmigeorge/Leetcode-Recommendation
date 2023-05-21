@@ -37,12 +37,7 @@ def myResponse(value,difficulty):
 
 @app.route('/api', methods=['POST','GET'])
 def getApi():
-    # response = jsonify({"message": ["message1", "message2","message3"]})
-    # if not request.is_json:
-    #     return jsonify({'error': 'Invalid request: Expected JSON data'}), 415
-    
-    # value = request.json['value']
-    # difficulty = request.json['level']
+    # for POST request
     print('i just got here')
     if request.content_type != 'application/json':
         return jsonify({'error': 'Invalid request: Expected JSON data', 'status_code': 415}), 415
@@ -54,6 +49,11 @@ def getApi():
     response = jsonify(myResponse(value,difficulty))
     response.headers.add('Access-Control-Allow-Origin', 'http://localhost:3000')
     return response
+
+    # to try GET request
+    # response = jsonify({"message": ["message1", "message2","message3"]})
+    # if not request.is_json:
+    #     return jsonify({'error': 'Invalid request: Expected JSON data'}), 415
     
     
 
