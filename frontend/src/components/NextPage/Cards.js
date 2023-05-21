@@ -1,10 +1,11 @@
 import React from 'react'
 import CardItem from './CardItem'
+// import './card.css';
 
 function Cards(props) {
 
   return (
-    <div>
+    <div className='container'>
         <h2>Let's Code</h2>
         <div className="row mx-5">
           {props.array.map((element, index)=>{ 
@@ -13,7 +14,7 @@ function Cards(props) {
               </div>
           })}
       </div>
-      </div>
+    </div>
   )
 }
 

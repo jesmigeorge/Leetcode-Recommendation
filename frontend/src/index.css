@@ -11,6 +11,11 @@ body {
   align-items: center;
   flex-direction: column;
   text-align: center;
+  background: url(https://png.pngtree.com/background/20210715/original/pngtree-abstract-futuristic-circuit-board-illustration-high-computer-technology-background-design-picture-image_1261001.jpg);
+  /* background-position: center; */
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 code {
