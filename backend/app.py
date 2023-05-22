@@ -17,7 +17,7 @@ def myResponse(value,difficulty):
     prompt = '''leetcode questions of '''+value+''' with 
     the links to those questions of '''+difficulty+''' level.
     Only respond with question title and link in table 
-    format.No text or explanation.'''
+    format.No text or explanation.Dont give question number.'''
     
     response = openai.ChatCompletion.create(
     model="gpt-3.5-turbo",
