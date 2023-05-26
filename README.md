@@ -1,6 +1,7 @@
 # openaiProject
 This web app uses the OPEN AI API to take prompt from the user about the question category and its level to return the questions of mentioned category from Leetcode.
 ## Errors
+
 1. Not completed the endpoint in fetch() of frontend,also ```proxy``` in package.json should have address of the backend.
 
 2. Get Request - CORS error - just enable cors through the response.header that is passed from backend to frontend because browser follows same origin policy for safety.In case of this error dont disable cors in browser manually,rater control it via code.
@@ -27,4 +28,5 @@ To run for development.
 
 ``` npm start ```
  
- 
+![Homepage](/Errors/output1.png)
+![Nextpage](/Errors/output.png)
