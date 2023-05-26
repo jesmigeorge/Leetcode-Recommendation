@@ -28,6 +28,8 @@ To run for development.
 
 ``` npm start ```
 
+## Final Working
+
 ![output1](https://github.com/jesmigeorge/openaiProject/assets/98166252/515b14cb-a53a-476b-8c54-b50e3a4c1cd3)
 
 ![output](https://github.com/jesmigeorge/openaiProject/assets/98166252/c2626539-52e6-4131-af81-ffddec7a75df)
