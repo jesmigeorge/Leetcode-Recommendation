@@ -33,3 +33,11 @@ To run for development.
 ![output1](https://github.com/jesmigeorge/openaiProject/assets/98166252/515b14cb-a53a-476b-8c54-b50e3a4c1cd3)
 
 ![output](https://github.com/jesmigeorge/openaiProject/assets/98166252/c2626539-52e6-4131-af81-ffddec7a75df)
+
+##  Product Walkthrough
+
+
+
+https://github.com/jesmigeorge/openaiProject/assets/98166252/584550cf-09e2-40ff-aea0-d2fe97199e9c
+
+
